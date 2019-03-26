@@ -13,8 +13,7 @@
         "twig/twig": "^2",
         "jigius/core-memoize": "^0.0.1",
         "jigius/core-stash": "^0.0.1",
-        "jigius/core-media-chunk": "^0.0.1",
-        "jigius/core-media-tpltr": "^0.0.1"
+        "jigius/core-media-chunk": "^0.0.1"
     },
     "autoload": {
         "psr-4": {

@@ -11,8 +11,8 @@
     ],
     "require": {
         "twig/twig": "^2",
-        "jigius/memoize": "^0.0.1",
-        "jigius/stash": "^0.0.1",
+        "jigius/core-memoize": "^0.0.1",
+        "jigius/core-stash": "^0.0.1",
         "jigius/core-media-chunk": "^0.0.1",
         "jigius/core-media-tpltr": "^0.0.1"
     },

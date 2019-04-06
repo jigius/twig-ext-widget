@@ -34,14 +34,14 @@ final class WidgetExtension extends Twig\Extension\AbstractExtension
         return [
             new Twig\TwigFunction(
                 'widget',
-                function (Twig\Environment $env, $context, string $class, iterable $option) {
+                function (Twig\Environment $env, $context, string $class, array $option = null) {
                     $class = $this->ns->resolved($class);
                     $stash = $this->memoize->getOrSet(hash('md5', "stash@" . $class), function () use ($class) {
                         return $this->stash->create();
                     });
                     echo (function (WidgetInterface $widget) {
                         return $widget->rendered();
-                    }) (new $class($option, $this->ctx, $stash));
+                    }) (new $class($option ?? [], $this->ctx, $stash));
                 },
                 [
                     'needs_context' => true,

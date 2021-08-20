@@ -29,6 +29,9 @@ final class WidgetExtension extends Twig\Extension\AbstractExtension
         $this->ns = $ns === null? new Namespaces(): $ns;
     }
 
+    /**
+     * @return Twig\TwigFunction[]
+     */
     public function getFunctions()
     {
         return [

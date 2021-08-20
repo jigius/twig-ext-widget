@@ -10,14 +10,29 @@
         }
     ],
     "require": {
-        "twig/twig": "^2",
-        "jigius/core-memoize": "^0.0.1",
-        "jigius/core-stash": "^0.0.1",
-        "jigius/core-media-chunk": "^0.0.1"
+        "twig/twig": ">=2",
+        "jigius/core-memoize": "dev-master",
+        "jigius/core-stash": "dev-master",
+        "jigius/core-media-chunk": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "TwigExtensionWidget\\": "src/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:jigius/core-memoize.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:jigius/core-stash.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:jigius/core-media-chunk.git"
+        }
+    ],
+    "minimum-stability": "dev"
 }
